@@ -1,6 +1,7 @@
 
 import './App.css';
 import Heading from './components/Heading';
+import Login from './components/Login';
 import Subheading from './components/Subheading';
 
 function App() {
