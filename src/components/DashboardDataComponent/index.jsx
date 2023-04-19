@@ -38,13 +38,13 @@ function DashboardDataComponent({
             break;
     }
     return (
-        <div className={`bg-white rounded-lg w-350 h-205 p-8 m-8 flex-grow`}>
-            <h3 className='mt-46 ml-31 font-medium text-xl leading-125 text-gray-900 font-inter tracking-wider'>
+        <div className={`bg-white rounded-lg w-360 h-205 p-8 pr-6 py-12 m-8 flex-grow`}>
+            <h3 className='mt-46 pb-6 ml-31 font-medium text-xl leading-125 text-gray-900 font-inter tracking-wider'>
                 {heading}
             </h3>
             <div className="flex">
                 <div className="w-4/5">
-                    <h2 className="font-inter font-medium  text-2xl leading-relaxed tracking-wider">{details}</h2>
+                    <h2 className="font-inter font-medium  text-2xl leading-relaxed tracking-wider mb-2">{details}</h2>
                     <div className='flex'>
                         <div className='max-w-max px-2 rounded-full text-white' style={{backgroundColor: percentageColor}}>{percentage}</div>
                         <p className='ml-3'>{percentageTitle}</p>
