@@ -86,7 +86,7 @@ function TextInput({
     >
       <label className=" font-inter text-xl font-semibold">{config.label}</label>
       <input
-        className={`border-2 rounded-lg w-full py-2 px-8 placeholder-cadet_grey outline-none`}
+        className={`border-2 rounded-lg w-full py-2 px-8 outline-none`}
         onFocus={() => setBorderColor("white")}
         style={{
           borderColor: borderColor,
@@ -100,7 +100,7 @@ function TextInput({
         onBlur={handleBlur}
       />
       <small
-        className="text-red font-DM-Reg"
+        className="text-red font-inter"
         style={{ opacity: err ? "100%" : "0%" }}
       >
         {errMessage}
