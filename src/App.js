@@ -3,7 +3,7 @@ import Loading from './components/Dashboard/Loading';
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-slate-300 h-screen">
      <Loading />
     </div>
   );
