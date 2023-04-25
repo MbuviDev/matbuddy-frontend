@@ -1,5 +1,8 @@
 import React,{ useRef, useState } from 'react'
-import TextInput from '../../../../components/InputComponents/textInput';
+import SenderInputs from './Inputs/SenderInputs';
+import RecipientInputs from './Inputs/RecipientInputs';
+import DestinationInputs from './Inputs/DestinationInputs';
+import DescriptionInputs from './Inputs/DescriptionInputs';
 
 function NewParcel() {
     const [showError, setShowError] = useState(0);
@@ -12,36 +15,12 @@ function NewParcel() {
     
   return (
     <>
-        <form onClick={handleSub} className='mx-8'>
-            <TextInput
-            initial={""}
-            input={input}
-            showError={showError}
-            inputKey="first_name"
-            mt={0.5}
-            config={{
-              required: true,
-              label: "First Name",
-              placeholder: "John",
-              maxChar: 250,
-              minChar: 3,
-            }}
-            />
-            <TextInput
-            initial={""}
-            input={input}
-            showError={showError}
-            inputKey="last_name"
-            mt={0.5}
-            config={{
-              required: true,
-              label: "Last Name",
-              placeholder: "John",
-              maxChar: 250,
-              minChar: 3,
-            }}
-            />
-          <button className='col-span-3 row-span-1'>Sub Button</button>
+        <form onClick={handleSub} className='mx-8 mb-6 bg-white rounded-2xl'>
+            <SenderInputs input={input} showError={showError}/>
+            <RecipientInputs input={input} showError={showError}/>
+            <DestinationInputs input={input} showError={showError}/>
+            <DescriptionInputs input={input} showError={showError}/>
+          <button className='block mx-auto'>Sub Button</button>
         </form>
 
       </>
