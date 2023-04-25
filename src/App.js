@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Dashboard from './PAGES/Dashboard';
 import Heading from './components/Heading';
+import Login from './components/Login';
 import Subheading from './components/Subheading';
 
 function App() {
