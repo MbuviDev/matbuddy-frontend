@@ -15,8 +15,8 @@ function Dashboard() {
   
   return (
     <div className='bg-gray-50'>
-      <DashboardData/>
       <NewParcel/>
+      <DashboardData/>
     </div>
   )
 }
