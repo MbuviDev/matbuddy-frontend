@@ -1,10 +1,16 @@
-import './App.css';
-import Loading from './components/Dashboard/Loading';
 
+import './App.css';
+import Heading from './components/Heading';
+import Login from './components/Login';
+import Subheading from './components/Subheading';
+import Loading from './components/Dashboard/Loading';
 function App() {
   return (
-    <div className="bg-slate-300 h-screen">
+    <div className="bg-green-600 h-screen">
+     <Heading />
+     <Login />
      <Loading />
+     <Subheading />
     </div>
   );
 }
