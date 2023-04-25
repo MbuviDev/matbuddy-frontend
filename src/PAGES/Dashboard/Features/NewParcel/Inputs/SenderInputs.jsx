@@ -27,6 +27,7 @@ function SenderInputs({ input, showError }) {
         config={{
           required: true,
           label: "Sender National ID",
+          type: "number",
           placeholder: "John",
           maxChar: 250,
           minChar: 3,
@@ -41,9 +42,10 @@ function SenderInputs({ input, showError }) {
         config={{
           required: true,
           label: "Sender Phone",
-          placeholder: "John",
-          maxChar: 250,
-          minChar: 3,
+          placeholder: "0700 000 000",
+          type: "number",
+          maxChar: 20,
+          minChar: 10,
         }}
       />
     </>

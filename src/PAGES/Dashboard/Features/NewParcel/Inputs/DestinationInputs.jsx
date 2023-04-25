@@ -8,7 +8,7 @@ function DestinationInputs({ input, showError }) {
                 initial={""}
                 input={input}
                 showError={showError}
-                inputKey="last_name"
+                inputKey="destination"
                 mt={0.5}
                 config={{
                     required: true,
@@ -22,7 +22,7 @@ function DestinationInputs({ input, showError }) {
                 initial={""}
                 input={input}
                 showError={showError}
-                inputKey="last_name"
+                inputKey="payment_mode"
                 mt={0.5}
                 config={{
                     required: true,
@@ -36,15 +36,14 @@ function DestinationInputs({ input, showError }) {
                 initial={""}
                 input={input}
                 showError={showError}
-                inputKey="last_name"
+                inputKey="quantity"
                 mt={0.5}
                 config={{
                     required: true,
                     label: "Quantity",
                     placeholder: "0000",
                     type:"number",
-                    maxChar: 250,
-                    minChar: 3,
+                    maxChar: 25,
                 }}
             />
         </>

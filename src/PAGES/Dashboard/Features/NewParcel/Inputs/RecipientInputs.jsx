@@ -28,6 +28,7 @@ function RecepientInputs({ input, showError }) {
           required: true,
           label: "Recipient National ID",
           placeholder: "37005004",
+          type: "number",
           maxChar: 250,
           minChar: 3,
         }}
@@ -42,8 +43,9 @@ function RecepientInputs({ input, showError }) {
           required: true,
           label: "Recipient Phone",
           placeholder: "0700 000 000",
-          maxChar: 250,
-          minChar: 3,
+          type: "number",
+          maxChar: 20,
+          minChar: 10,
         }}
       />
     </>

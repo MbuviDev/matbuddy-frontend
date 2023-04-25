@@ -27,9 +27,9 @@ function DescriptionInputs({ input, showError }) {
                 config={{
                     required: true,
                     label: "Total Parcel Value",
-                    placeholder: "John",
-                    maxChar: 250,
-                    minChar: 3,
+                    type: "number",
+                    placeholder: "000",
+                    maxChar: 25,
                 }}
             />
             <TextInput
@@ -43,8 +43,7 @@ function DescriptionInputs({ input, showError }) {
                     label: "Fee Charged",
                     placeholder: "000",
                     type: "number",
-                    maxChar: 250,
-                    minChar: 3,
+                    maxChar: 25,
                 }}
             />
         </>

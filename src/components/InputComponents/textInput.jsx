@@ -71,14 +71,14 @@ function TextInput({
     }
 
     input.current.err[inputKey] = false;
-    setBorderColor("bright_grey");
+    setBorderColor("#28a745");
     setErr(false);
     setErrorMessage(`* Field required`);
   }
 
   return (
     <div
-      className="flex flex-col"
+      className="flex flex-col flex-grow mx-8 my-5"
       style={{
         marginTop: `${mt}em`,
         marginBottom: `${mb}em`,
