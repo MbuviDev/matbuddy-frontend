@@ -11,7 +11,7 @@ function TextInput({
     disabled: false,
     required: true,
     label: "Text input",
-    placeholder: "",
+    placeholder:"",
     type: "text",
     maxChar: 200,
     minChar: 0,

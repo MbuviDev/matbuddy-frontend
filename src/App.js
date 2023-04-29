@@ -4,7 +4,10 @@ import Dashboard from './PAGES/Dashboard';
 import Heading from './components/Heading';
 import Login from './components/Login';
 import Subheading from './components/Subheading';
-import Loading from './components/Dashboard/Loading';
+import Loading from './PAGES/Loading/Loading';
+import Expenses from './PAGES/Expenses/Expenses';
+
+
 function App() {
   return (
     <>
@@ -13,18 +16,31 @@ function App() {
         <>
           <div className="bg-green-600 h-screen">
             <Heading />
-            {/* <Login /> */}
+            <Login />
             <Subheading />
           </div>
+        
         </>}
       />
-      <Route path="/loading" element={<Loading />}/>
-      
+     
       <Route path='/dashboard' element={
         <Dashboard/>
       }/>
+
+      <Route path ='/loading' element={
+        <Loading /> 
+      }/>
+
+     <Route path ='/expenses' element={
+      <Expenses />
+     }/>
+
+
      </Routes>
-      </>
+
+
+
+     </>
   );
 }
 
