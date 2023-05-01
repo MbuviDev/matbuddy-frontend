@@ -13,7 +13,7 @@ function DestinationInputs({ input, showError }) {
                 config={{
                     required: true,
                     label: "Destination",
-                    placeholder: "Destination",
+                    placeholder: "Select Destination",
                     maxChar: 250,
                     minChar: 3,
                 }}
@@ -41,7 +41,7 @@ function DestinationInputs({ input, showError }) {
                 config={{
                     required: true,
                     label: "Quantity",
-                    placeholder: "0000",
+                    placeholder: "Enter Quantity",
                     type:"number",
                     maxChar: 25,
                 }}

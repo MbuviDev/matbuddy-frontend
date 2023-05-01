@@ -13,7 +13,7 @@ function DescriptionInputs({ input, showError }) {
                 config={{
                     required: true,
                     label: "Description",
-                    placeholder: "...",
+                    placeholder: "Enter Parcel Description",
                     maxChar: 250,
                     minChar: 3,
                 }}
@@ -28,7 +28,7 @@ function DescriptionInputs({ input, showError }) {
                     required: true,
                     label: "Total Parcel Value",
                     type: "number",
-                    placeholder: "000",
+                    placeholder: "Enter Parcel Value",
                     maxChar: 25,
                 }}
             />
@@ -41,7 +41,7 @@ function DescriptionInputs({ input, showError }) {
                 config={{
                     required: true,
                     label: "Fee Charged",
-                    placeholder: "000",
+                    placeholder: "Enter Fee",
                     type: "number",
                     maxChar: 25,
                 }}
