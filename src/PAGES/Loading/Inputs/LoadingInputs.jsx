@@ -5,7 +5,7 @@ import TextInput from "../../../components/InputComponents/textInput";
 function LoadingInputs ({ input, showError }) {
 
     return (
-        <div>
+        <div className="">
             <TextInput 
              initial={""}
              input={input}

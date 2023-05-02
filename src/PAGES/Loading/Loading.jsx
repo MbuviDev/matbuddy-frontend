@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
 import LoadingInputs from "./Inputs/LoadingInputs";
+import Table from "../../components/Tables/Tables";
+
 
 
 function Loading () {
@@ -12,15 +14,17 @@ function Loading () {
 
     return (
         <div className="bg-gray-300 h-screen ">
-            <h1>Passenger Ticketing  </h1>
-            <div class="p-8">
+            <h1 class="text-2xl p-6">Passenger Ticketing  </h1>
+            <div class="p-6">
+             
            <form onSubmit={handleSubmit}>
-           <div className="bg-white">
-            <h1>New Trip</h1>
-            <LoadingInputs  input={input} showError={showError} />
-            <button type="submit" class="mt-8 bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-700">Submit</button>
+           <div className="bg-white rounded-lg  ">
+            <h1 class="p-4 text-xl">New Trip</h1>
+            <LoadingInputs  input={input} showError={showError} className="content-center" />
+            <button type="submit" class=" m-6 mt-8 bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-700">Submit</button>
            </div>
                 
+            <Table />
            </form> 
            </div>
         </div>

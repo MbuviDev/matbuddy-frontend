@@ -6,6 +6,7 @@ import Login from './components/Login';
 import Subheading from './components/Subheading';
 import Loading from './PAGES/Loading/Loading';
 import Expenses from './PAGES/Expenses/Expenses';
+import Navbar from './components/Navbar/Navbar';
 
 
 function App() {
@@ -34,6 +35,11 @@ function App() {
      <Route path ='/expenses' element={
       <Expenses />
      }/>
+
+    <Route path ='/navbar' element={
+      <Navbar />
+     }/>
+
 
 
      </Routes>

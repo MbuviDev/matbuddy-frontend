@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import kinatwa from "./kinatwa.png"
+import Navbar from "./Navbar/Navbar"
+import { Link } from "react-router-dom";
 
 
 function Login () {
 const [number, setNumber] = useState ("")
 const [password, setPassword] = useState ("")
+const [showComponent, setShowComponent] = useState(false);
+
+
+const handleButtonClick = () => {
+    setShowComponent(!showComponent)
+}
 
     
     return(
@@ -35,7 +43,10 @@ const [password, setPassword] = useState ("")
                 onChange={(e => setPassword(e.target.value))}
                 />
                 <div class="">
-                    <button type="submit" class="mt-8 bg-blue-500 text-white py-2 px-16 rounded-full hover:bg-blue-700">Sign In</button>
+                    <Link to="navbar">
+                    <button onClick={handleButtonClick} type="submit" class="mt-8 bg-blue-500 text-white py-2 px-16 rounded-full hover:bg-blue-700">Sign In </button>
+                    </Link>
+                    {showComponent && <Navbar />}
                     
 
                 </div>
