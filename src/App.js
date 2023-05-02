@@ -10,9 +10,16 @@ import Navbar from './components/Navbar/Navbar';
 
 
 function App() {
+
+  const loggedIn =true
+  
   return (
-    <>
-     <Routes>
+    <div className='relative flex'>
+      <div className='w-2/10 sticky top-0'>
+        {loggedIn&&<Navbar />}
+      </div>
+    <div className='flex-grow'>
+      <Routes>
       <Route path='/' element={
         <>
           <div className="bg-green-600 h-screen">
@@ -36,17 +43,12 @@ function App() {
       <Expenses />
      }/>
 
-    <Route path ='/navbar' element={
-      <Navbar />
-     }/>
-
-
-
      </Routes>
+    </div>
 
 
 
-     </>
+     </div>
   );
 }
 

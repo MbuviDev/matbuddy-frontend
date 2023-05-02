@@ -12,8 +12,7 @@ function Navbar() {
   const [expanded, setExpanded] = React.useState(false);
   return (
     <div
-    className={`w-20 h-screen overflow-hidden bg-gray-900 pt-16 flex flex-col
-
+    className={`w-20 h-screen overflow-hidden bg-gray-900 pt-16 flex flex-col sticky top-0
     transition-all duration-200 ${
       expanded ? "w-60" : ""
     }`}
@@ -23,7 +22,7 @@ function Navbar() {
     
   >
       <div className="flex-grow">
-        <NavItem image={dashboard} path='/' text="Dashboard"/>
+        <NavItem image={dashboard} path='/dashboard' text="Dashboard"/>
         <NavItem image={loading} path='/loading' text="Loading"/>
         <NavItem image={station} path='/station' text="Station"/>
         <NavItem image={expenses} path='/expenses' text="Expenses" flex="1 0 auto"/>
