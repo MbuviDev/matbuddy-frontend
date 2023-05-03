@@ -98,7 +98,8 @@ function SelectInput({
           value={initial}>Select</option>
         {
       options.map(option=>
-        <option 
+        <option
+        key={option.value}
           className='px-2 py-1 text-black bg-white hover:bg-slate-500 hover:text-blue-700 outline-none border-none' 
           value={option.value}>
           {option.label}
