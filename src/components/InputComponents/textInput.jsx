@@ -28,6 +28,7 @@ function TextInput({
   useEffect(() => {
     input.current.form[inputKey] = initial;
     setTextInput(initial);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -35,10 +36,12 @@ function TextInput({
       return;
     }
     handleBlur();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showError]);
 
   useEffect(() => {
     input.current.form[inputKey] = initial;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function handleChange(txt) {
