@@ -30,7 +30,6 @@ function ExpensesForm(){
                                     <option
                                         key={optionList.indexOf(option) + 1}
                                         value={option}
-                                        className="hover:animate-pulse"
                                         >
                                         {option}
                                     </option>
@@ -56,7 +55,6 @@ function ExpensesForm(){
                                 <option
                                     key={vehicleList.indexOf(vehicle) + 1}
                                     value={vehicle}
-                                    className="bg-transparent p-2"
                                     >
                                         {vehicle}
                                     </option>
