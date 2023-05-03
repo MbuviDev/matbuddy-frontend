@@ -75,9 +75,11 @@ function SelectWithSearch({
     control: (styles) => ({ ...styles,
       backgroundColor: 'white', 
       minWidth:"270px",
-      padding:"4px",
+      padding:"2px 4px",
       fontSize: '16px',
       borderColor: borderColor,
+      borderWidth: "2px",
+      borderRadius: "0.5rem",
     }),
   }
   
