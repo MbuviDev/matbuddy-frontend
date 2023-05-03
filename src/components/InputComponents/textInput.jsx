@@ -84,9 +84,9 @@ function TextInput({
         marginBottom: `${mb}em`,
       }}
     >
-      <label className=" font-inter text-xl font-semibold">{config.label}</label>
+      <label className=" font-inter font-semibold">{config.label}</label>
       <input
-        className={`border-2 rounded-lg w-full py-2 px-8 outline-none focus:ring-1 focus:ring-indigo-400`}
+        className={`border-2 rounded-lg w-full py-2 px-2 outline-none focus:ring-1 focus:ring-indigo-400`}
         style={{
           borderColor: borderColor,
           cursor: config.disabled ? "not-allowed" : "text",
