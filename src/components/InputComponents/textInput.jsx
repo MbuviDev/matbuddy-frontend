@@ -11,7 +11,7 @@ function TextInput({
     disabled: false,
     required: true,
     label: "Text input",
-    placeholder: "",
+    placeholder:"",
     type: "text",
     maxChar: 200,
     minChar: 0,
@@ -28,6 +28,7 @@ function TextInput({
   useEffect(() => {
     input.current.form[inputKey] = initial;
     setTextInput(initial);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -35,10 +36,12 @@ function TextInput({
       return;
     }
     handleBlur();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showError]);
 
   useEffect(() => {
     input.current.form[inputKey] = initial;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function handleChange(txt) {
@@ -84,9 +87,9 @@ function TextInput({
         marginBottom: `${mb}em`,
       }}
     >
-      <label className=" font-inter text-xl font-semibold">{config.label}</label>
+      <label className=" font-inter font-semibold">{config.label}</label>
       <input
-        className={`border-2 rounded-lg w-full py-2 px-8 outline-none focus:ring-1 focus:ring-indigo-400`}
+        className={`border-2 rounded-lg w-full py-2 px-2 outline-none focus:ring-1 focus:ring-indigo-400`}
         style={{
           borderColor: borderColor,
           cursor: config.disabled ? "not-allowed" : "text",

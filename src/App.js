@@ -4,27 +4,51 @@ import Dashboard from './PAGES/Dashboard';
 import Heading from './components/Heading';
 import Login from './components/Login';
 import Subheading from './components/Subheading';
-import Loading from './components/Dashboard/Loading';
+import Loading from './PAGES/Loading/Loading';
+import Expenses from './PAGES/Expenses/Expenses';
+import Navbar from './components/Navbar/Navbar';
+
+
 function App() {
+
+  const loggedIn =true
+  
   return (
-    <>
-     <Routes>
+    <div className='relative flex'>
+      <div className='w-2/10 sticky top-0'>
+        {loggedIn&&<Navbar />}
+      </div>
+    <div className='flex-grow'>
+      <Routes>
       <Route path='/' element={
         <>
           <div className="bg-green-600 h-screen">
             <Heading />
-            {/* <Login /> */}
+            <Login />
             <Subheading />
           </div>
+        
         </>}
       />
-      <Route path="/loading" element={<Loading />}/>
-      
+     
       <Route path='/dashboard' element={
         <Dashboard/>
       }/>
+
+      <Route path ='/loading' element={
+        <Loading /> 
+      }/>
+
+     <Route path ='/expenses' element={
+      <Expenses />
+     }/>
+
      </Routes>
-      </>
+    </div>
+
+
+
+     </div>
   );
 }
 

@@ -13,12 +13,12 @@ function RecepientInputs({ input, showError }) {
         config={{
           required: true,
           label: "Recipient Name",
-          placeholder: "John",
+          placeholder: "Enter Name",
           maxChar: 250,
           minChar: 3,
         }}
       />
-      <TextInput
+      {/* <TextInput
         initial={""}
         input={input}
         showError={showError}
@@ -32,7 +32,7 @@ function RecepientInputs({ input, showError }) {
           maxChar: 250,
           minChar: 3,
         }}
-      />
+      /> */}
       <TextInput
         initial={""}
         input={input}
@@ -42,7 +42,7 @@ function RecepientInputs({ input, showError }) {
         config={{
           required: true,
           label: "Recipient Phone",
-          placeholder: "0700 000 000",
+          placeholder: "Enter Phone(07/01)",
           type: "number",
           maxChar: 20,
           minChar: 10,
