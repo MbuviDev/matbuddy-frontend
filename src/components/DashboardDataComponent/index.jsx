@@ -38,7 +38,7 @@ function DashboardDataComponent({
             break;
     }
     return (
-        <div className={`bg-white rounded-lg w-360 h-205 p-8 pr-6 py-12 my-8 flex-grow`}>
+        <div className={`bg-white rounded-lg w-360 h-205 p-8 pr-6 py-12 m-6 flex-grow`}>
             <h3 className='mt-46 pb-6 ml-31 font-medium text-xl leading-125 text-gray-900 font-inter tracking-wider'>
                 {heading}
             </h3>
