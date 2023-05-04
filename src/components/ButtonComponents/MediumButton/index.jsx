@@ -1,8 +1,9 @@
 import React from 'react'
 
-function MediumButton() {
+function MediumButton({config }) {
+  const {label, onClickFunction, color, style="", }= config
   return (
-    <div>MediumButton</div>
+    <button>{label}</button>
   )
 }
 

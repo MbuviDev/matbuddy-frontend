@@ -4,15 +4,15 @@ import LargeButton from './LargeButton';
 import SmallButton from './SmallButton';
 
 
-function Button({size="medium"}) {
+function Button({size="medium", config}) {
     
     switch(size){
         case("large"):
-            return <LargeButton/>
+            return <LargeButton config={config}/>
         case("small"):
-            return <SmallButton/>
+            return <SmallButton config={config}/>
         default:
-            return <MediumButton/>
+            return <MediumButton config={config}/>
     }
 }
 
