@@ -1,24 +1,16 @@
-import React, { useState, useRef } from 'react'
-import DashboardDataComponent from '../../components/DashboardDataComponent'
-import TextInput from '../../components/InputComponents/textInput'
+import React from 'react'
 import NewParcel from './Features/NewParcel';
 import DashboardData from './Features/DashboardData';
+import Page from '../../components/Page';
 
 function Dashboard() {
   
-  const input = useRef({ form: {}, err: {} });
-
-  function handleSub(e){
-    e.preventDefault();
-    console.log(input)
-  }
-  
   return (
-    <div className='bg-gray-300'>
+    <Page>
       <h1 class="font- text-2xl">Dashboard </h1>
       <NewParcel/>
       <DashboardData/>
-    </div>
+    </Page>
   )
 }
 
