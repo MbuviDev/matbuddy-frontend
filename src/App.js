@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Dashboard from './PAGES/Dashboard';
-import Heading from './components/Heading';
-import Login from './components/Login';
-import Subheading from './components/Subheading';
+import Heading from './PAGES/Login/Heading';
+import Login from './PAGES/Login/Login';
+import Subheading from './PAGES/Login/Subheading';
 import Loading from './PAGES/Loading/Loading';
 import Expenses from './PAGES/Expenses/Expenses';
 import Navbar from './components/Navbar/Navbar';
