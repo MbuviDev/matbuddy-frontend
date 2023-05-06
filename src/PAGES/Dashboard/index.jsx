@@ -1,6 +1,5 @@
 import React, { useState, useRef } from 'react'
-import DashboardDataComponent from '../../components/DashboardDataComponent'
-import TextInput from '../../components/InputComponents/textInput'
+
 import NewParcel from './Features/NewParcel';
 import DashboardData from './Features/DashboardData';
 
