@@ -7,7 +7,7 @@ import ExpensesBreakdown from "./Components/BreakDown";
 
 function Expenses () {
    return (
-    <section className="p-2 font-mono text-left bg-slate-300 min-h-screen">
+    <section className="p-2 text-left bg-slate-300 min-h-screen">
         <section className="p-2 m-2">
             <h1 className="text-4xl p-2 m-2 font-bold">Expense Tracker</h1>
             <div className="grid gap-y-8">
