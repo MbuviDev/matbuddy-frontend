@@ -85,7 +85,7 @@ function SelectWithSearch({
   
   return (
     <div 
-    className="relative flex flex-col flex-grow mx-8 my-5"
+    className="relative flex flex-col flex-grow mx-2 md:mx-8 my-5"
     style={{
       marginTop: `${mt}em`,
       marginBottom: `${mb}em`,
