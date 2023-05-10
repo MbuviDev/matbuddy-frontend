@@ -12,19 +12,8 @@ function Navbar() {
   const [expanded, setExpanded] = React.useState(false);
   return (
     <div
-<<<<<<< HEAD
-    className={`w-20 h-screen overflow-hidden bg-gray-800 pt-16 flex flex-col sticky top-0
-    transition-all duration-200 ${
-      expanded ? "w-60" : ""
-    }`}
-
-    onMouseEnter={() => setExpanded(true)}
-    onMouseLeave={() => setExpanded(false)}
-    
-=======
     className={`w-9 md:w-12 h-screen overflow-hidden bg-gray-900 pt-16 flex flex-col sticky top-0
     transition-all duration-200 hover:w-40 md:hover:w-60`}
->>>>>>> MAT-6-Dashboard/-parcel
   >
       <div className="flex-grow">
         <NavItem image={dashboard} path='/dashboard' text="Dashboard"/>
