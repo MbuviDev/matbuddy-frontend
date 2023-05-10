@@ -81,7 +81,7 @@ function TextInput({
 
   return (
     <div
-      className="flex flex-col flex-grow mx-8 my-5"
+      className="flex flex-col flex-grow mx-2 md:mx-8 my-5"
       style={{
         marginTop: `${mt}em`,
         marginBottom: `${mb}em`,

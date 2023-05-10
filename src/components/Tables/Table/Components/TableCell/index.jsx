@@ -1,8 +1,8 @@
 import React from 'react'
 
-function TableCell() {
+function TableCell({children, w}) {
   return (
-    <div>TableCell</div>
+    <div style={{ width: `${w}%` }} className='text-ellipsis'>{children}</div>
   )
 }
 
