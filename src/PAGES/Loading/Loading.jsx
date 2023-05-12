@@ -1,4 +1,5 @@
 import React from "react";
+import Loadingform from "./components/Loadingform";
 
 
 function Loading () {
@@ -6,19 +7,11 @@ function Loading () {
     
     return (
 
-        <div className="bg-white">
+        <div className="">
             <h1 class="p-6 text-2xl">Passenger Ticketing</h1>
-            <div className="bg-white-900 p-8">
-            <form >
-                <h1>New Trip</h1>
-                <label>
-                    <input />
-                </label>
-
-
-            </form>
+            <div className="p-8">
+            <Loadingform />
             </div>
-
 
         </div>
     )
