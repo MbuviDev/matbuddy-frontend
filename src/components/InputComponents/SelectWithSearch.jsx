@@ -25,16 +25,12 @@ function SelectWithSearch({
   
   const initial = ""
     
-  const [textInput, setTextInput] = useState(initial);
-  
   const [err, setErr] = useState(false);
   
   const [errMessage, setErrorMessage] = useState("Field Required");
   
 
   function onSelect(e){
-    setTextInput(e?.value || "");
-    console.log("text ", e?.value)
     setBorderColor("#28a745")
     input.current.form[inputKey] = initial;
     input.current.form[inputKey] = e?.value;
@@ -48,16 +44,15 @@ function SelectWithSearch({
       return;
     }
     
-    if (textInput === initial) {
+    if (input.current.form[inputKey] === initial) {
       setBorderColor("red");
       setErr(true);
       input.current.err[inputKey] = true;
       setErrorMessage(`* Field required`);
-      console.log("error here ", textInput)
       return;
     }
 
-    if (textInput.length < config.minChar) {
+    if (input.current.form[inputKey].length < config.minChar) {
       setBorderColor("red");
       setErr(true);
       setErrorMessage(`* min charters required ${config.minChar}`);
