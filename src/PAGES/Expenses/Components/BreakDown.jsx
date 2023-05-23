@@ -10,7 +10,7 @@ const exampleCosts = [
 
 	{
 		id : 2,
-		name : "Diesel",
+		name :"Diesel",
 		price : 56000
 	},
 
@@ -21,7 +21,7 @@ const exampleCosts = [
 	}
 ];
 
-// Infornation to display while loading expenses
+// Information to display while loading expenses
 function LoadInfo({ hidden }){
 	return (
 		<div className="p-2 m-2" hidden={hidden}>

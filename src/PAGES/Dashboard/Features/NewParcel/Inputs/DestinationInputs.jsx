@@ -51,7 +51,7 @@ function DestinationInputs({ input, showError }) {
                     label: "Destination",
                     placeholder: "Select Destination",
                     maxChar: 250,
-                    minChar: 3,
+                    // minChar: 3,
                 }}
             />
             <SelectInput
@@ -60,13 +60,13 @@ function DestinationInputs({ input, showError }) {
                 showError={showError}
                 inputKey="payment_mode"
                 mt={0.5}
-                options={[{label:"MEPSA", value:"1"},{label:"CASH", value:"2"}]}
+                options={[{label:"MPESA", value:"1"},{label:"CASH", value:"2"}]}
                 config={{
                     required: true,
                     label: "Payment Mode",
                     placeholder: "Payment Mode",
                     maxChar: 250,
-                    minChar: 3,
+                    // minChar: 3,
                 }}
             />
             <TextInput

@@ -6,6 +6,7 @@ function ExpensesInputs ({ input, showError }) {
 
     return (
         <div>
+
             <TextInput 
              initial={""}
              input={input}
@@ -20,6 +21,7 @@ function ExpensesInputs ({ input, showError }) {
                  minChar: 3,
              }}
             />
+
 
             <TextInput 
             initial={""}
@@ -67,9 +69,6 @@ function ExpensesInputs ({ input, showError }) {
                 minChar: 1,
             }}
             />
-
-            
-
 
         </div>
     )

@@ -1,22 +1,81 @@
-function Loadingform () {
+import SelectWithSearch from "../../../components/InputComponents/SelectWithSearch";
+import TextInput from "../../../components/InputComponents/textInput";
 
+
+
+function Loadingform ({ input, showError }) {
+
+
+    const dummyOptions=[
+        { "_id": "645216b3bfe0017c72157600",
+        "name": "Bagtown",
+        "isActive": false
+      }
+    ]
+  
     return (
+        <div className="">
         
-            <form className="bg-amber-100 p-8  rounded-lg">
-                <h1>New Trip</h1>
-                <label> Vehicle </label>
-                    <input />
-                <label>Origin </label>
-                     <input /> 
-                <label>Destination </label>   
-                    <input />
-                <label>Passenger Fare Amount</label>
-                    <input />
+              <SelectWithSearch
+                initial={""}
+                input={input}
+                showError={showError}
+                inputKey="destination"
+                mt={0.5}
+                options={dummyOptions.map(obj=>({label: obj.name.toLocaleUpperCase(), value: obj._id}))}
+                config={{
+                    required: true,
+                    label: "Vehicle",
+                    placeholder: "Select Vehicle",
+                    maxChar: 250,
+                    }} />
 
-                <button type="submit" class="mt-8 bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-700"> Submit</button>    
+                <SelectWithSearch
+                initial={""}
+                input={input}
+                showError={showError}
+                inputKey="destination"
+                mt={0.5}
+                options={dummyOptions.map(obj=>({label: obj.name.toLocaleUpperCase(), value: obj._id}))}
+                config={{
+                    required: true,
+                    label: "Origin",
+                    placeholder: "Select Origin",
+                    maxChar: 250,
+                   
+                }} />
 
-            </form>
-           
+                <SelectWithSearch
+                initial={""}
+                input={input}
+                showError={showError}
+                inputKey="destination"
+                mt={0.5}
+                options={dummyOptions.map(obj=>({label: obj.name.toLocaleUpperCase(), value: obj._id}))}
+                config={{
+                    required: true,
+                    label: "Destination",
+                    placeholder: "Select Destination",
+                    maxChar: 250,
+                   
+                }} />
+
+
+                <TextInput 
+                  initial={""}
+                  input={input}
+                  showError={showError}
+                  inputKey="quantity"
+                  mt={0.5}
+                  config={{
+                      required: true,
+                      label: "Passenger Fare Amount",
+                      placeholder: "Enter Passenger Fare Amount",
+                      type:"number",
+                      maxChar: 25,
+                  }}/>
+                
+            </div>
     )
 }
 
