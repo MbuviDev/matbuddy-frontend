@@ -8,7 +8,7 @@ function Dashboard() {
   
   return (
     <Page>
-      <h1 class="font- text-2xl">Dashboard </h1>
+      <h1 class="text-2xl">Dashboard </h1>
       <NewParcel/>
       <DashboardData/>
       <ParcelsTable/>
