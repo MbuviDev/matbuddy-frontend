@@ -7,6 +7,7 @@ import Subheading from './PAGES/Login/Subheading';
 import Loading from './PAGES/Loading/Loading';
 import Expenses from './PAGES/Expenses/Expenses';
 import Navbar from './components/Navbar/Navbar';
+import Station from './PAGES/Stations/Station';
 
 
 function App() {
@@ -31,17 +32,13 @@ function App() {
         </>}
       />
      
-      <Route path='/dashboard' element={
-        <Dashboard/>
-      }/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
 
-      <Route path ='/loading' element={
-        <Loading /> 
-      }/>
+      <Route path ='/loading' element={<Loading /> }/>
 
-     <Route path ='/expenses' element={
-      <Expenses />
-     }/>
+     <Route path ='/expenses' element={<Expenses />}/>
+
+     <Route path ="/station" element={<Station/>}/>
 
      </Routes>
     </div>
