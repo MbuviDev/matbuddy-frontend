@@ -12,6 +12,7 @@ function DescriptionInputs({ input, showError }) {
                 mt={0.5}
                 config={{
                     required: true,
+                    type: "text",
                     label: "Description",
                     placeholder: "Enter Parcel Description",
                     maxChar: 250,
@@ -33,6 +34,7 @@ function DescriptionInputs({ input, showError }) {
                 }}
             />
             <TextInput
+            className="px-2 py-4"
                 initial={""}
                 input={input}
                 showError={showError}

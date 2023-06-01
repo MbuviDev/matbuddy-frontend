@@ -13,6 +13,7 @@ function SenderInputs({ input, showError }) {
         config={{
           required: true,
           label: "Sender Name",
+          type: "text",
           placeholder: "Enter Name",
           maxChar: 250,
           minChar: 3,

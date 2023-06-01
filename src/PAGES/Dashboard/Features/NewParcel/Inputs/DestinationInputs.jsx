@@ -49,6 +49,7 @@ function DestinationInputs({ input, showError }) {
                 config={{
                     required: true,
                     label: "Destination",
+                    type:"text",
                     placeholder: "Select Destination",
                     maxChar: 250,
                     // minChar: 3,

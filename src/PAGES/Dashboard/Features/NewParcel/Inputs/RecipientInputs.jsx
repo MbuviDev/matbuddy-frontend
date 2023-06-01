@@ -13,6 +13,7 @@ function RecepientInputs({ input, showError }) {
         config={{
           required: true,
           label: "Recipient Name",
+          type:"text",
           placeholder: "Enter Name",
           maxChar: 250,
           minChar: 3,
