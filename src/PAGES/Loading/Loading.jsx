@@ -18,9 +18,9 @@ function Loading () {
         <div className="">
             <h1 className="text-2xl p-8">Passenger Ticketing</h1>
             <div className="p-12 ">
-            <div onSubmit={handleSub} className="p-8 bg-amber-400 rounded-3xl  ">
-            <h1 className="text-2xl ">New Trip</h1>
-            <Loadingform input={input} showError={showError} className=""/>
+            <div onSubmit={handleSub} className="p-8 bg-amber-400 rounded-3xl ">
+            <h1 className="text-2xl font-s ">New Trip</h1>
+            <Loadingform input={input} showError={showError} className="  px-24 py-12"/>
             <Submitbutton />
             </div>
             </div>
