@@ -2,6 +2,7 @@ import React from "react";
 import { useRef, useState } from "react";
 import ExpensesForm from "./Components/ExpensesForm";
 import Submitbutton from "../../components/ButtonComponents/SubmitButton/Submitbutton";
+import Page from "../../components/Page";
 
 
 function Expenses() {
@@ -16,16 +17,16 @@ function Expenses() {
  
   return (
        
-       <div>
+       <Page>
         <h1 className="text-3xl p-2 m-2 font-serif">Expense Tracker</h1>
         <div className="p-8">
-            <div onSubmit={handleSub} className="bg-amber-400 rounded-3xl">
+            <div onSubmit={handleSub} className="bg-white rounded-3xl">
                 <h1 className="p-4 text-2xl">New Expense Log</h1>
                 <ExpensesForm input={input} showError={showError}/>
                 <Submitbutton />
             </div>
         </div>
-       </div>
+       </Page>
 
   );
 }

@@ -1,6 +1,7 @@
 import React,{ useRef, useState } from 'react'
 import Loadingform from "./components/Loadingform";
 import Submitbutton from '../../components/ButtonComponents/SubmitButton/Submitbutton';
+import Page from '../../components/Page';
 
 
 function Loading () {
@@ -15,10 +16,10 @@ function Loading () {
     
     return (
 
-        <div className="">
+        <Page className= "h-screen">
             <h1 className="text-2xl p-8">Passenger Ticketing</h1>
             <div className="p-12 ">
-            <div onSubmit={handleSub} className="p-8 bg-amber-400 rounded-3xl ">
+            <div onSubmit={handleSub} className="p-8 bg-white rounded-3xl ">
             <h1 className="text-2xl font-s ">New Trip</h1>
             <Loadingform input={input} showError={showError} className="  px-24 py-12"/>
             <Submitbutton />
@@ -26,7 +27,7 @@ function Loading () {
             </div>
                       
 
-        </div>
+        </ Page>
     )
 }
 
