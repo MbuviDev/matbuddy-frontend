@@ -21,8 +21,8 @@ function Expenses() {
         <div className="h-screen ">
         <h1 className="text-3xl p-2 m-2 font-serif">Expense Tracker</h1>
         <div className="p-8">
-            <div onSubmit={handleSub} className="bg-white rounded-3xl">
-                <h1 className="p-4 text-2xl">New Expense Log</h1>
+            <div onSubmit={handleSub} className="p-8 bg-white rounded-3xl">
+                <h1 className=" text-2xl font-serif">New Expense Log</h1>
                 <ExpensesForm input={input} showError={showError}/>
                 <Submitbutton className="flex justify-end"/>
             </div>
