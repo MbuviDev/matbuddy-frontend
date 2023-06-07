@@ -14,9 +14,10 @@ function Loadingform ({ input, showError }) {
     ]
   
     return (
-        <div className="">
+        <div className="flex">
         
               <SelectWithSearch
+                className="block"
                 initial={""}
                 input={input}
                 showError={showError}
@@ -31,6 +32,7 @@ function Loadingform ({ input, showError }) {
                     }} />
 
                 <SelectWithSearch
+                className="block"
                 initial={""}
                 input={input}
                 showError={showError}
@@ -46,6 +48,7 @@ function Loadingform ({ input, showError }) {
                 }} />
 
                 <SelectWithSearch
+                className="block"
                 initial={""}
                 input={input}
                 showError={showError}
@@ -62,6 +65,7 @@ function Loadingform ({ input, showError }) {
 
 
                 <TextInput 
+                  className="block"
                   initial={""}
                   input={input}
                   showError={showError}

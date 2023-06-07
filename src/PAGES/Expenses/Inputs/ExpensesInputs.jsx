@@ -5,7 +5,7 @@ import TextInput from "../../../components/InputComponents/textInput";
 function ExpensesInputs ({ input, showError }) {
 
     return (
-        <div>
+        <div className="flex">
 
             <TextInput 
              initial={""}

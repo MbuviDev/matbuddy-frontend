@@ -3,7 +3,7 @@ import TextInput from '../../../../../components/InputComponents/textInput'
 
 function DescriptionInputs({ input, showError }) {
     return (
-        <>
+        <div>
             <TextInput
                 initial={""}
                 input={input}
@@ -48,7 +48,7 @@ function DescriptionInputs({ input, showError }) {
                     maxChar: 25,
                 }}
             />
-        </>
+        </div>
     )
 }
 

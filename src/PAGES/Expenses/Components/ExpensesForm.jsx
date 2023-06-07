@@ -12,7 +12,7 @@ function ExpensesForm({ input, showError }) {
     //     className="grid grid-cols-2 p-2 gap-4 h-full w-full
 	// 				align-middle items-center justify-center"
     //   >
-		<div>
+		<div className="flex">
         <SelectWithSearch
           initial={""}
           input={input}

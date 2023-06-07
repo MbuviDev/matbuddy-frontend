@@ -3,7 +3,7 @@ import TextInput from '../../../../../components/InputComponents/textInput'
 
 function RecepientInputs({ input, showError }) {
   return (
-    <>
+    <div>
       <TextInput
         initial={""}
         input={input}
@@ -49,7 +49,7 @@ function RecepientInputs({ input, showError }) {
           minChar: 10,
         }}
       />
-    </>
+    </div>
   )
 }
 

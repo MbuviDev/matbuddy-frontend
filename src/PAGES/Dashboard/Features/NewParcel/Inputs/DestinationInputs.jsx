@@ -38,7 +38,7 @@ function DestinationInputs({ input, showError }) {
       ]
     
     return (
-        <>
+        <div>
             <SelectWithSearch
                 initial={""}
                 input={input}
@@ -84,7 +84,7 @@ function DestinationInputs({ input, showError }) {
                     maxChar: 25,
                 }}
             />
-        </>
+        </div>
     )
 }
 

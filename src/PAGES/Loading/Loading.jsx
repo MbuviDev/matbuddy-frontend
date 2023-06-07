@@ -20,9 +20,9 @@ function Loading () {
             <div className= "h-screen">
             <h1 className="text-3xl p-2 font-serif">Passenger Ticketing</h1>
             <div className="p-8 ">
-            <div onSubmit={handleSub} className="p-8 bg-white rounded-3xl ">
+            <div onSubmit={handleSub} className="p-8 bg-white rounded-3xl">
             <h1 className="text-2xl font-serif ">New Trip</h1>
-            <Loadingform input={input} showError={showError} className="  px-24 py-12"/>
+            <Loadingform input={input} showError={showError} className=" px-24 py-12"/>
             <Submitbutton />
             </div>
             </div>
