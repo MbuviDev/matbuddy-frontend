@@ -6,12 +6,6 @@ import TextInput from "../../../components/InputComponents/textInput";
 function Loadingform ({ input, showError }) {
 
 
-    const dummyOptions=[
-        { "_id": "645216b3bfe0017c72157600",
-        "name": "Bagtown",
-        "isActive": false
-      }
-    ]
   
     return (
         <div className="flex">
@@ -23,7 +17,6 @@ function Loadingform ({ input, showError }) {
                 showError={showError}
                 inputKey="destination"
                 mt={0.5}
-                options={dummyOptions.map(obj=>({label: obj.name.toLocaleUpperCase(), value: obj._id}))}
                 config={{
                     required: true,
                     label: "Vehicle",
@@ -38,7 +31,6 @@ function Loadingform ({ input, showError }) {
                 showError={showError}
                 inputKey="destination"
                 mt={0.5}
-                options={dummyOptions.map(obj=>({label: obj.name.toLocaleUpperCase(), value: obj._id}))}
                 config={{
                     required: true,
                     label: "Origin",
@@ -54,7 +46,6 @@ function Loadingform ({ input, showError }) {
                 showError={showError}
                 inputKey="destination"
                 mt={0.5}
-                options={dummyOptions.map(obj=>({label: obj.name.toLocaleUpperCase(), value: obj._id}))}
                 config={{
                     required: true,
                     label: "Destination",
@@ -66,6 +57,7 @@ function Loadingform ({ input, showError }) {
 
                 <TextInput 
                   className="block"
+                  type="number"
                   initial={""}
                   input={input}
                   showError={showError}
@@ -75,7 +67,7 @@ function Loadingform ({ input, showError }) {
                       required: true,
                       label: "Passenger Fare Amount",
                       placeholder: "Enter Passenger Fare Amount",
-                      type:"number",
+                    //   type:"number",
                       maxChar: 25,
                   }}/>
                 
