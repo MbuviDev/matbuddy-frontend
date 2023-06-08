@@ -22,7 +22,7 @@ function Loading () {
             <div className="p-8">
             <div onSubmit={handleSub} className="p-4 bg-white rounded-3xl">
             <h1 className="text-xl font-serif p-4 ">New Trip</h1>
-            <Loadingform input={input} showError={showError} className=" px-24 py-12"/>
+            <Loadingform input={input} showError={showError} />
             <Submitbutton />
             </div>
             </div>
