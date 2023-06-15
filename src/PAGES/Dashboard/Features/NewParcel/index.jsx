@@ -16,7 +16,7 @@ function NewParcel() {
     
   return (
     <>
-        <form onSubmit={handleSub} className='my-8 mb-6 bg-white rounded-2xl'>
+        <form onSubmit={handleSub} className='my- mb-6 bg-white rounded-3xl'>
               <h1 className='p-4 text-xl'>New Parcel</h1>
             <div className='flex flex-wrap'>
             <SenderInputs input={input} showError={showError}/>

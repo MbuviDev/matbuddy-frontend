@@ -19,7 +19,7 @@ function Loading () {
         <Page>
             <div className= "h-screen">
             <h1 className="text-3xl p-2 font-serif">Passenger Ticketing</h1>
-            <div className="p-8">
+            <div >
             <div onSubmit={handleSub} className="p-4 bg-white rounded-3xl">
             <h1 className="text-xl font-serif p-4 ">New Trip</h1>
             <Loadingform input={input} showError={showError} />
